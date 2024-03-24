@@ -1,12 +1,12 @@
 ---
 - name: Read messages from a kafka topic and act on them
-  hosts: localhost
+  hosts: all
   ## Define our source for events
   sources:   
     - ansible.eda.kafka:
-        host: broker
+        host: my-cluster-kafka-bootstrap.openshift-operators.svc.cluster.local
         port: 9092
-        topic: eda-topic
+        topic: my-topic
         group_id:
   ## Define the conditions we are looking for
   rules:
