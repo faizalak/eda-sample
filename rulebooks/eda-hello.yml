@@ -4,8 +4,8 @@
   ## Define our source for events
   sources:   
     - ansible.eda.kafka:
-        host: my-cluster-kafka-bootstrap.openshift-operators.svc.cluster.local
-        port: 9092
+        host: ip-10-0-223-251.us-east-2.compute.internal
+        port: 30174
         topic: my-topic
         group_id:
   ## Define the conditions we are looking for
