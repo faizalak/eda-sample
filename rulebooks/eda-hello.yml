@@ -14,5 +14,5 @@
       condition: event.message == "Ansible is cool"
       ## Define the action we should take should the condition be met
       action:
-        run_playbook:
-          name: say-hello.yml
+        run_job_template:
+          name: say-eda-hello
